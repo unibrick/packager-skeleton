@@ -1,0 +1,41 @@
+{
+    "name": ":lc:vendor/:lc:package",
+    "description": ":package_description",
+    "license": ":license",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "authors": [
+        {
+            "name": "Unibrick",
+            "email": "unibricks@yandex.com",
+        }
+    ],
+    "homepage": "https://github.com/:lc:vendor/:lc:package",
+    "keywords": ["Laravel", ":uc:package"],
+    "require": {
+        "illuminate/support": "^10.0"
+    },
+    "require-dev": {
+
+    },
+    "autoload": {
+        "psr-4": {
+            ":uc:vendor\\:uc:package\\": "./src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            ":uc:vendor\\:uc:package\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                ":uc:vendor\\:uc:package\\:uc:packageServiceProvider"
+            ],
+            "aliases": {
+                ":uc:package": ":uc:vendor\\:uc:package\\Facades\\:uc:package"
+            }
+        }
+    }
+}
