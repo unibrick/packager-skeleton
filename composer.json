@@ -20,12 +20,11 @@
     },
     "autoload": {
         "psr-4": {
-            ":uc:vendor\\:uc:package\\": "./src"
+            ":uc:vendor\\:uc:package\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            ":uc:vendor\\:uc:package\\Tests\\": "tests"
         }
     },
     "extra": {
